@@ -1,0 +1,9 @@
+.order-now-container{
+  max-width: 80%;
+  margin-inline: auto;
+  padding-top: 2rem;
+}
+
+.order-now-container p{
+  font-size: 1.1rem;
+}

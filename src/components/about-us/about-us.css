@@ -1,0 +1,18 @@
+.about-us-container{
+  max-width: 80%;
+  margin-inline: auto;
+  padding-top: 2rem;
+}
+
+.about-text-container{
+  padding-top: 2rem;
+}
+
+.text-container{
+  margin: 1.5rem 0;
+}
+
+.text-container p{
+  margin: 0;
+  font-size: 1.1rem;
+}

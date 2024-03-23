@@ -1,0 +1,28 @@
+.footer{
+  background-color: #594A47;
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+}
+
+.footer-contacts{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-contacts a{
+  text-decoration: none;
+  font-size:1rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  color: #F6CFBF;
+  cursor: pointer;
+}
+
+.footer-contacts a:hover{
+  color: #A2938C;
+}
+

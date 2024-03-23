@@ -1,24 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/footer/footer';
+import Home from './components/home/home';
+import AboutUs from './components/about-us/about-us';
+import NavBar from './components/nav-bar/nav-bar';
+import ContactUs from "./components/contact-us/contact-us"
+import Menu from "./components/menu/menu"
+import OrderNow from './components/order-now/order-now';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import data from './data';
 
 function App() {
+
+  const [dishes, setDishes] = useState([])
+
+  useEffect(() =>{
+    setDishes(data)
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar/>
+        <Routes>
+        <Route element={<Home />}
+          path='/'
+        />
+        <Route element={<AboutUs />}
+        path='/about-us'
+         />
+         <Route element={<ContactUs />}
+        path='/contact-us'
+         />
+         <Route element={<Menu dishes={dishes}/>}
+         path='/menu'  />
+         <Route element={<OrderNow />}
+         path='/order-now'  />
+        </Routes>
+        
+        
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

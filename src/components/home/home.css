@@ -1,0 +1,46 @@
+
+
+.home-container{
+  background-image: url("../../../public/leaf.png");
+  background-position:  10rem 1rem ;
+  background-size: contain;
+  background-color: #FAF2E9;
+  background-repeat: no-repeat;
+  height: 82vh;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.left-side-container{
+ display: flex;
+ align-items: center;
+}
+
+.right-side-container{
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.right-side-container img{
+  max-height: 350px;
+  max-width: 500px;
+}
+
+
+
+.title{
+  font-size: 3.5rem;
+  font-family: "Baskervville", serif;
+  font-weight:bold;
+  font-style: normal;
+}
+
