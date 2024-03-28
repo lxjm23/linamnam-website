@@ -33,7 +33,7 @@ const  data = [
       "regular" : 70,
       "large" : 95
     },
-    "category" : "beef"
+    "category" : "chicken"
   },
   {
     "name" : "Chicken Afritada",

@@ -1,5 +1,10 @@
 .menu-container{
   padding-top:1.5rem ;
-  max-width: 1000px;
+  max-width: 600px;
   margin-inline: auto;
+}
+
+.menu-category{
+  
+  margin-top: 2rem;
 }
