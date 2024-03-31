@@ -6,7 +6,7 @@ const Dish = ({dish}) =>{
 
   const priceKeys = Object.keys(price)
   const priceElements = priceKeys.map((key, index)=>(
-    <p key={index}>${price[key]} for {key.replace("_", " ").toUpperCase()}</p>
+    <p key={index}>${price[key]} / {key.replace("_", " ").toUpperCase()}</p>
   ));
 
   return(
@@ -14,7 +14,7 @@ const Dish = ({dish}) =>{
       <h2>{name}</h2>
       <div className="desc-container">
       <p>{desc}</p>
-      <p>Price: {priceElements}</p>
+      <h4>Price: {priceElements}</h4>
       {add_ons && add_ons.length > 0 && (
         <div>
           <h4>Add-ons:</h4>

@@ -34,9 +34,11 @@ form input, form textarea{
   border:1px solid #594A47;
   margin:10px 0; 
   font-size: 1rem;
+  border-radius: 7px;
 }
 
 .btn-send{
+  border-radius: 7px;
   font-family: inherit;
   font-size: 1.2rem;
   background-color: #F6CFBF;

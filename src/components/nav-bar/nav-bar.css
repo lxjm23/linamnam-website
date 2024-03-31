@@ -83,6 +83,7 @@
 .dropdown-menu a {
   display: block;
   margin: 5px;
+  text-transform: capitalize;
 }
 
 .dropdown-menu a:hover{
