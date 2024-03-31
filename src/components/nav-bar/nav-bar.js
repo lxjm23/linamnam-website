@@ -1,8 +1,8 @@
-// Import necessary modules and CSS file
+
 import React from 'react';
 import "./nav-bar.css";
 
-// Define the NavBar component
+
 const NavBar = ({categories}) => {
   console.log(categories)
   return (
@@ -30,5 +30,5 @@ const NavBar = ({categories}) => {
   );
 };
 
-// Export the NavBar component
+
 export default NavBar;

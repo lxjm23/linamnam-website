@@ -13,16 +13,23 @@ import data from './data';
 function App() {
 
   const [dishes, setDishes] = useState([])
+  const categories = [...new Set(dishes.map(dish => dish.category))];
 
   useEffect(() =>{
     setDishes(data)
   })
 
+  
+
+ 
+
+  
+
 
   return (
     <Router>
       <div className="App">
-        <NavBar/>
+        <NavBar categories={categories}/>
         <Routes>
         <Route element={<Home />}
           path='/'
