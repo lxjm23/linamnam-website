@@ -1,6 +1,11 @@
 import "./nav-bar.css"
 
 const NavBar = () =>{
+
+  const click = () =>{
+    console.log("clicked")
+  }
+
  return(
   <div className="nav-bar-container">
     <div className="nav-bar">
@@ -10,7 +15,7 @@ const NavBar = () =>{
         <div className="dropdown">
         <a href="/menu" className="nav-link">Menu</a>
         <div className="dropdown-menu">
-          <a href="#pork">Pork</a>
+          <a onClick={click} href="#pork">Pork</a>
           <a href="#beef">Beef</a>
           <a href="#vegetable">Vegetable</a>
           <a href="#Pica-pica">Pica Pica</a>

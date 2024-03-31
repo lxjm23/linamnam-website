@@ -6,7 +6,7 @@
   background-size: contain;
   background-color: #FAF2E9;
   background-repeat: no-repeat;
-  height: 82vh;
+  min-height: 82vh;
 }
 
 
@@ -24,6 +24,7 @@
 }
 
 .right-side-container{
+  border: 1px solid red;
   max-height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -31,8 +32,7 @@
   align-items: center;
 }
 .right-side-container img{
-  max-height: 350px;
-  max-width: 500px;
+  max-height: 325px;
 }
 
 
