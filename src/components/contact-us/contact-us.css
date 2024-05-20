@@ -54,3 +54,7 @@ form input, form textarea{
   text-decoration: none;
   
 }
+
+@media (max-width:768px) {
+  
+}

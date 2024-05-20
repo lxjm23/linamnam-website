@@ -1,6 +1,6 @@
 .footer{
   background-color: #594A47;
-  height: 7rem;
+  min-height: 7rem;
   width: 100%;
   display: flex;
   justify-content:space-around;
@@ -24,5 +24,13 @@
 
 .footer-contacts a:hover{
   color: #A2938C;
+}
+
+@media (max-width:768px) {
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
