@@ -6,7 +6,7 @@
   background-size: contain;
   background-color: #FAF2E9;
   background-repeat: no-repeat;
-  height: 82vh;
+  min-height: 82vh;
 }
 
 
