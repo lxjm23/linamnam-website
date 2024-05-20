@@ -1,3 +1,14 @@
+import React, { useEffect } from 'react';
+import './nav-bar.css';
+import Script from './script';
+
+const NavBar = ({ categories }) => {
+  useEffect(() => {
+    const cleanup = Script(); // Initialize script and get cleanup function
+    return cleanup; // Clean up event listeners on component unmount
+  }, []); // Empty dependency array
+
+
 
 import React from 'react';
 import "./nav-bar.css";
@@ -5,6 +16,7 @@ import "./nav-bar.css";
 
 const NavBar = ({categories}) => {
   console.log(categories)
+
   return (
     <div className="nav-bar-container">
       <div className="nav-bar">
@@ -32,5 +44,6 @@ const NavBar = ({categories}) => {
     </div>
   );
 };
+}
 
 export default NavBar;
