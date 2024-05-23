@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() =>{
     setDishes(data)
-  })
+  },[])
 
   
 
@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar categories={categories}/>
+      <NavBar categories={categories}/>
         <Routes>
         <Route element={<Home />}
           path='/'
