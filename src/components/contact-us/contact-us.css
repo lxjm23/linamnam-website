@@ -55,6 +55,12 @@ form input, form textarea{
   
 }
 
-@media (max-width:768px) {
+@media (max-width:425px) {
+  .contact-container{
+    padding-top: 2rem;
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+  
   
 }
